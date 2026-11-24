@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MP3 播放器</string>
+    <string name="tab_local">本地音乐</string>
+    <string name="tab_online">在线发现</string>
+    <string name="search_hint">搜索免费音乐...</string>
+    <string name="permission_required">需要存储权限才能扫描本地音乐</string>
+    <string name="no_music_found">未找到本地音乐文件</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="next">下一首</string>
+    <string name="previous">上一首</string>
+    <string name="download">下载</string>
+    <string name="downloading">正在下载...</string>
+    <string name="download_complete">下载完成</string>
+    <string name="download_failed">下载失败</string>
+    <string name="loading">加载中...</string>
+    <string name="no_results">没有找到结果</string>
+    <string name="search_error">搜索失败，请检查网络</string>
+    <string name="notification_channel_name">音乐播放</string>
+    <string name="notification_channel_desc">MP3播放器后台播放通知</string>
+    <string name="unknown_artist">未知艺术家</string>
+    <string name="unknown_album">未知专辑</string>
+    <string name="shuffle">随机播放</string>
+    <string name="repeat">循环播放</string>
+    <string name="repeat_one">单曲循环</string>
+    <string name="jamendo_hint">在线音乐由 Jamendo 提供，可免费下载。首次使用请在设置中配置免费 API Key（见 README）。</string>
+    <string name="settings">设置</string>
+    <string name="api_key_hint">Jamendo API Key</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/surface"
+    android:padding="24dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="正在播放"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_close"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="关闭"
+            app:tint="@color/text_secondary" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/primary_light">
+
+        <ImageView
+            android:id="@+id/ivAlbumArtLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_music_placeholder"
+            android:contentDescription="专辑封面" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvTitleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="歌曲标题"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/tvArtistLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="艺术家"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCurrentTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0:00"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:id="@+id/tvTotalTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0:00"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btnShuffle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_shuffle"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/shuffle"
+            app:tint="@color/text_secondary" />
+
+        <ImageButton
+            android:id="@+id/btnPrevious"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/previous"
+            app:tint="@color/text_primary" />
+
+        <ImageButton
+            android:id="@+id/btnPlayPauseLarge"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_play"
+            android:background="@drawable/bg_play_button"
+            android:contentDescription="@string/play"
+            app:tint="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btnNextLarge"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_next"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/next"
+            app:tint="@color/text_primary" />
+
+        <ImageButton
+            android:id="@+id/btnRepeat"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_repeat"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/repeat"
+            app:tint="@color/text_secondary" />
+    </LinearLayout>
+
+</LinearLayout>
